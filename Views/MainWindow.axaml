@@ -9,17 +9,16 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="Лаба 1. Винник Маргарита Дмитриевна, группа 351"
         Width="400" Height="350"
-        Background="#BDEEFA"
-        Foreground="Blue">
+        Background="#BDEEFA">
 
     <Design.DataContext>
         <vm:MainViewModel />
     </Design.DataContext>
 
-    <StackPanel Spacing="5" Margin="15">
-        <Button x:Name="BtnRed" Content="Красный" />
-        <Button x:Name="BtnGreen" Content="Зелёный" />
-        <Button x:Name="BtnBlue" Content="Синий" />
-        <Button x:Name="BtnYellow" Content="Жёлтый" />
+    <StackPanel Spacing="8" Margin="15">
+        <Button x:Name="BtnRed"    Content="Красный" Click="OnColorButtonClick"/>
+        <Button x:Name="BtnGreen"  Content="Зелёный" Click="OnColorButtonClick"/>
+        <Button x:Name="BtnBlue"   Content="Синий"   Click="OnColorButtonClick"/>
+        <Button x:Name="BtnYellow" Content="Жёлтый"  Click="OnColorButtonClick"/>
     </StackPanel>
 </Window>
