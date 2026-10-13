@@ -13,28 +13,13 @@
         Foreground="Blue">
 
     <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainViewModel />
     </Design.DataContext>
 
-    <!-- <TextBox Text="{Binding Greeting}"
-             HorizontalAlignment="Center"
-             VerticalAlignment="Center" /> -->
-    <StackPanel>
-        <Button>
-            <TextBlock Text="Красный"/>
-        </Button>
-        <Button>
-            <TextBlock Text="Зелёный"/>
-        </Button>
-        <Button>
-            <TextBlock Text="Синий"/>
-        </Button>    
-        <Button>
-            <TextBlock Text="Жёлтый"/>
-        </Button>
-        
+    <StackPanel Spacing="5" Margin="15">
+        <Button x:Name="BtnRed" Content="Красный" />
+        <Button x:Name="BtnGreen" Content="Зелёный" />
+        <Button x:Name="BtnBlue" Content="Синий" />
+        <Button x:Name="BtnYellow" Content="Жёлтый" />
     </StackPanel>
-
 </Window>
